@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".stopwatch">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_startChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:onClick="startChronometer"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/btn_pauseChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pauseChronometer"
+        android:text="PAUSE" />
+
+    <Button
+        android:id="@+id/btn_resetChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetChronometer"
+        android:text="RESET" />
+
+    <Button
+        android:id="@+id/btn_lap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAP" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:id="@+id/listview1"/>
+
+
+</LinearLayout>
